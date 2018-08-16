@@ -7,7 +7,7 @@ def word_substituter(tweet)
   new_tweet_words = tweet_words.collect do |tword|
     if dictionary.keys.include?(tword.downcase)
        tweet_words[tweet_words.index(tword)] = dictionary[tword.downcase]
-     else tword 
+    else tword 
     end
   end
   new_tweet_words.join(" ")
