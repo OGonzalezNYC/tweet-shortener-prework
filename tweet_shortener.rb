@@ -8,9 +8,9 @@ def word_substituter(tweet)
     if dictionary.keys.include?(tword.downcase)
        tweet_words[tweet_words.index(tword)] = dictionary[tword.downcase]
     end
-    new_tweet_words = tweet_words.collect
+    
   end
-  new_tweet_words.join(" ")
+  tweet_words.join(" ")
 end
 
 
