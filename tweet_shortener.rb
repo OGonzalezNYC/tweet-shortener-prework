@@ -9,7 +9,7 @@ def word_substituter(tweet)
        tweet_words[tweet_words.index(tword)] = dictionary[tword.downcase]
     end
   end
-  new_tweet_words
+  
   new_tweet_words.join(" ")
 end
 
